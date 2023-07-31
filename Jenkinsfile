@@ -14,6 +14,7 @@ pipeline {
             steps {
                 sh 'test -f build/car.txt'
                 sh 'grep "chasis" build/car.txt'
+                echo 'hello Mohan'
             }
         }
         stage('Publish'){
