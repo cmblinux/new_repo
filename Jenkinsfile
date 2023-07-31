@@ -8,6 +8,7 @@ pipeline {
                 sh 'mkdir build' 
                 sh 'touch build/car.txt'
                 sh 'echo "chasis" > build/car.txt'
+                echo 'hello'
             }
         }
         stage('Test'){
